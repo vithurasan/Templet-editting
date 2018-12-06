@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Bootstrap Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <style>
+#lk{
+  background-color:    #f3adb8 ;
+  border-color: black;
+}
+#tb{
+  margin:50px 500px 1px 900px;
+}
+#tab{
+margin:2px 1000px 1px 25px;
+}
+#ser{
+  float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+#top{
+    background: #FF3409;
+    }
+#ll{
+margin:-100px 10px 1px 1500px;
+
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+.container{
+border-width: 5px;
+}
+ </style>
+</head>
+<body>
+<br>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> HOME</span></a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-align-justify"> MENUS </span>
+          <span class="glyphicon glyphicon-plus" style="align:right"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu 2</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Menu 1 </span>
+                <span class="glyphicon glyphicon-plus" style="align:right"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Menu 1.1</a></li>
+                  <li><a href="#">Menu 1.2</a></li>
+
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-cog"> SETTINGS</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-earphone"> CONTACT</span></a></li>
+        </ul>
+      </div>
+    </nav>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id=ll class="dropdown"><a class="dropdown-toggle"data-toggle="dropdown"><button type="button" class="btn btn-danger"> Botton dropdown menu </button> <span class="caret"></span></a>
+
+       <ul id=lk class="dropdown-menu">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">bootstrap</a></li>
+         <li><a href="#">J query</a></li>
+          <li><a href="#">J query ul</a></li>
+         <hr>
+          <li><a href="#">PHP</a></li>
+
+       </ul>
+
+</div>
+<br>
+<div id=tab>
+       <table class="table">
+   <thead>
+     <tr>
+       <th>Prodect ID</th>
+       <th>Prodect Name</th>
+       <th>Prodect Quality</th>
+       <th>Prodect Quantity</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr class="info">
+       <td>1</td>
+       <td>Wheat</td>
+       <td>Good</td>
+       <td>200 bags</td>
+     </tr>
+     <tr class="danger">
+       <td>2</td>
+       <td>Rice</td>
+       <td>Good</td>
+       <td>250 bags</td>
+
+     </tr>
+     <tr class="warning">
+       <td>3</td>
+       <td>suger</td>
+       <td>Good</td>
+       <td>200 bags</td>
+
+     </tr>
+     <tr class="info">
+       <td>3</td>
+       <td>suger</td>
+       <td>Good</td>
+       <td>200 bags</td>
+
+     </tr>
+     <tr class="success">
+       <td>3</td>
+       <td>suger</td>
+       <td>Good</td>
+      <td>200 bags</td>
+
+     </tr>
+   </tbody>
+ </table>
+</div>
+<br>
+<br>
+
+  <div>
+  <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#">HOME</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Web design</a></li>
+                          <li><a href="#">Web development</a></li>
+                          <li><a href="#">Web hosting</a></li>
+                        </ul>
+                        <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">BLOG</a></li>
+                      <li><a href="#">CONTACT</a></li>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+  </div>
+<br> <br> <br> <br>
+  <div style="width:40%">
+      <div class="col-lg-6">
+        <div class="input-group">
+ <input type="text" class="form-control" placeholder="Search for...">
+ <span class="input-group-btn">
+<select id="ddlsearch" class="selectpicker form-control" data-style="btn-primary">
+ <option value="Acessories">Acessories</option>
+ <option value="Jackets">Jackets</option>
+     <option value="Jeans">Jeans</option>
+<option value="Shoes">Shoes</option>
+       <option value="Shirts">Shirts</option>
+ <option value="Watches">Watches</option>
+   </select>
+<button class="btn btn-secondary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+   </span>
+</div>
+   </div>
+   </div><br><br>
+   <div class="container">
+  <table class="table table-bordered">
+    <thead>
+	<tr class="row">
+		<td colspan="2" align="center">Row Number:1</td>
+	</tr>
+      <tr>
+        <td class="about">Product Name</td>
+		<td class="product">Wheat</td>
+      </tr>
+    <tbody>
+      <tr>
+		<td class="about">Quality</td>
+		<td class="product">Good</td>
+      </tr>
+	  <tr>
+		<td class="about">Quantity</td>
+		<td class="product">200 Bags</td>
+      </tr>
+	  <tr class="row">
+		<td align="center" colspan="2"> Row Number:2</td>
+	</tr>
+      <tr>
+        <td class="about">Product Name</td>
+		<td class="product">Rice</td>
+      </tr>
+      <tr>
+		<td class="about">Quality</td>
+		<td class="product">Good</td>
+      </tr>
+	  <tr>
+		<td class="about">Quantity</td>
+		<td class="product">200 Bags</td>
+      </tr>
+    </tbody>
+</table>
+
+<br>
+
+
+    <div id=tb>
+     <table class="table">
+   <thead>
+     <tr class="btn btn-danger btn-block" align="center">
+
+       <th>Planes</th>
+       <th>Basic</th>
+       <th>Medium</th>
+       <th>Preminum</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr class="btn btn-none btn-block">
+       <td>Lorem</td>
+       <td>Element</td>
+       <td>Element</td>
+       <td>Element</td>
+     </tr>
+     <tr class="btn btn-none btn-block">
+       <td>Lorem</td>
+       <td>Element</td>
+       <td>Element</td>
+       <td>Element</td>
+
+     </tr>
+     <tr class="btn btn-none btn-block">
+       <td>Lorem</td>
+       <td>Element</td>
+       <td>Element</td>
+       <td>Element</td>
+
+     </tr>
+     <tr class="btn btn-none btn-block">
+       <td></td>
+       <td> <button type="button" class="btn btn-success">Buy</button></td>
+       <td> <button type="button" class="btn btn-success">Buy</button></td>
+       <td> <button type="button" class="btn btn-success">Buy</button></td>
+
+     </tr>
+   </tbody>
+ </table>
+</div>
+
+
+</body>
+</html>
